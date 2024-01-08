@@ -11,6 +11,7 @@ import sh
 from llvmlite import binding as llvm
 from llvmlite import ir
 from plum import dispatch
+from public import public
 
 from arxir import ast
 from arxir.builders.base import Builder, BuilderVisitor
@@ -471,14 +472,14 @@ class LLVMLiteIRVisitor(BuilderVisitor):
             self.visit(node)
 
     @dispatch  # type: ignore[no-redef]
-    def visit(self, expr: ast.Int32Literal) -> None:
-        """Translate ASTx Int32Literal to LLVM-IR."""
+    def visit(self, expr: ast.LiteralInt32) -> None:
+        """Translate ASTx LiteralInt32 to LLVM-IR."""
         result = ir.Constant(self._llvm.INT32_TYPE, expr.value)
         self.result_stack.append(result)
 
     @dispatch  # type: ignore[no-redef]
-    def visit(self, expr: ast.Call) -> None:
-        """Translate Function Call."""
+    def visit(self, expr: ast.FunctionCall) -> None:
+        """Translate Function FunctionCall."""
         callee_f = self.get_function(expr.callee)
 
         if not callee_f:
@@ -554,8 +555,8 @@ class LLVMLiteIRVisitor(BuilderVisitor):
         self.result_stack.append(fn)
 
     @dispatch  # type: ignore[no-redef]
-    def visit(self, expr: ast.Return) -> None:
-        """Translate ASTx Return to LLVM-IR."""
+    def visit(self, expr: ast.FunctionReturn) -> None:
+        """Translate ASTx FunctionReturn to LLVM-IR."""
         self.visit(expr.value)
 
     @dispatch  # type: ignore[no-redef]
@@ -570,6 +571,7 @@ class LLVMLiteIRVisitor(BuilderVisitor):
         self.result_stack.append(result)
 
 
+@public
 class LLVMLiteIR(Builder):
     """LLVM-IR transpiler and compiler."""
 

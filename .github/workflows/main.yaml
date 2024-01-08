@@ -115,5 +115,8 @@ jobs:
           auto-update-conda: true
           conda-solver: libmamba
 
+      - name: Install dependencies
+        run: poetry install
+
       - name: Run style checks
         run: makim tests.linter

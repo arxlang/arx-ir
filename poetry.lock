@@ -129,18 +129,17 @@ test = ["astroid (>=1,<2)", "astroid (>=2,<4)", "pytest"]
 
 [[package]]
 name = "astx"
-version = "0.7.1"
+version = "0.8.0"
 description = "ASTx is an agnostic expression structure for AST."
 optional = false
-python-versions = ">=3.8.1,<3.12"
+python-versions = ">=3.8.1,<4"
 files = [
-    {file = "astx-0.7.1-py3-none-any.whl", hash = "sha256:a7e6d66c1255aee5ebebbd8d7ec364b37026705f878f14032e6daeb860d2bfef"},
-    {file = "astx-0.7.1.tar.gz", hash = "sha256:7a060c42bcb6fb37b076389a0ba27a39f222874a7929a3a5640770a8dfcf8aa8"},
+    {file = "astx-0.8.0-py3-none-any.whl", hash = "sha256:e34bc56c0200b059c26fee0d7db6cd14bab9a222e4959e5466d2afd93b72dc8c"},
+    {file = "astx-0.8.0.tar.gz", hash = "sha256:d1b53d5ddb84be5315b5b9486eed8070eab6d2f9a0fd776fe41a8c39d0bbfbe3"},
 ]
 
 [package.dependencies]
 atpublic = ">=4.0"
-distlib = ">=0.3.7"
 graphviz = ">=0.20.1"
 typing-extensions = {version = ">=4", markers = "python_version < \"3.9\""}
 
@@ -1347,13 +1346,13 @@ files = [
 
 [[package]]
 name = "makim"
-version = "1.8.3"
+version = "1.9.1"
 description = "Simplify the usage of containers"
 optional = false
 python-versions = ">=3.8.1,<4.0.0"
 files = [
-    {file = "makim-1.8.3-py3-none-any.whl", hash = "sha256:3bc87d53ea2b40aaa92e5e08645a62b145fb9020a4888dd48a76eef1a09bb0e6"},
-    {file = "makim-1.8.3.tar.gz", hash = "sha256:d7db0a978aa634d40896043057df11ea908d982080365e409b173c3e35116369"},
+    {file = "makim-1.9.1-py3-none-any.whl", hash = "sha256:ae5eb2e1a4f466966d461ffed55674dbaad288699bd7c62a8aaf537130c0e7d3"},
+    {file = "makim-1.9.1.tar.gz", hash = "sha256:b3b427aa0eba2d9632845a62d70cbe34cdfa11dc079890d9866e41d4add79122"},
 ]
 
 [package.dependencies]
@@ -2577,13 +2576,13 @@ cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
 name = "referencing"
-version = "0.32.0"
+version = "0.32.1"
 description = "JSON Referencing + Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "referencing-0.32.0-py3-none-any.whl", hash = "sha256:bdcd3efb936f82ff86f993093f6da7435c7de69a3b3a5a06678a6050184bee99"},
-    {file = "referencing-0.32.0.tar.gz", hash = "sha256:689e64fe121843dcfd57b71933318ef1f91188ffb45367332700a86ac8fd6161"},
+    {file = "referencing-0.32.1-py3-none-any.whl", hash = "sha256:7e4dc12271d8e15612bfe35792f5ea1c40970dadf8624602e33db2758f7ee554"},
+    {file = "referencing-0.32.1.tar.gz", hash = "sha256:3c57da0513e9563eb7e203ebe9bb3a1b509b042016433bd1e45a2853466c3dd3"},
 ]
 
 [package.dependencies]
@@ -3123,13 +3122,13 @@ test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,
 
 [[package]]
 name = "types-python-dateutil"
-version = "2.8.19.14"
+version = "2.8.19.20240106"
 description = "Typing stubs for python-dateutil"
 optional = false
-python-versions = "*"
+python-versions = ">=3.8"
 files = [
-    {file = "types-python-dateutil-2.8.19.14.tar.gz", hash = "sha256:1f4f10ac98bb8b16ade9dbee3518d9ace017821d94b057a425b069f834737f4b"},
-    {file = "types_python_dateutil-2.8.19.14-py3-none-any.whl", hash = "sha256:f977b8de27787639986b4e28963263fd0e5158942b3ecef91b9335c130cb1ce9"},
+    {file = "types-python-dateutil-2.8.19.20240106.tar.gz", hash = "sha256:1f8db221c3b98e6ca02ea83a58371b22c374f42ae5bbdf186db9c9a76581459f"},
+    {file = "types_python_dateutil-2.8.19.20240106-py3-none-any.whl", hash = "sha256:efbbdc54590d0f16152fa103c9879c7d4a00e82078f6e2cf01769042165acaa2"},
 ]
 
 [[package]]
@@ -3248,13 +3247,13 @@ watchmedo = ["PyYAML (>=3.10)"]
 
 [[package]]
 name = "wcwidth"
-version = "0.2.12"
+version = "0.2.13"
 description = "Measures the displayed width of unicode strings in a terminal"
 optional = false
 python-versions = "*"
 files = [
-    {file = "wcwidth-0.2.12-py2.py3-none-any.whl", hash = "sha256:f26ec43d96c8cbfed76a5075dac87680124fa84e0855195a6184da9c187f133c"},
-    {file = "wcwidth-0.2.12.tar.gz", hash = "sha256:f01c104efdf57971bcb756f054dd58ddec5204dd15fa31d6503ea57947d97c02"},
+    {file = "wcwidth-0.2.13-py2.py3-none-any.whl", hash = "sha256:3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"},
+    {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
 ]
 
 [[package]]
@@ -3359,5 +3358,5 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.8.1,<3.12"
-content-hash = "ade6dfa81ae798254e2b1aa048e6bae98ee22020db981000774118144f27be4c"
+python-versions = ">=3.8.1,<4"
+content-hash = "056c9ecaf3cbcc69b5f2ae5c51106b69ca3afc534524ee8180291202b29755b5"
